@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
+
+
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container">            
+            <div class="navbar__menu">
+                <ul class="navbar__menu">
+                    <li class="navbar__menu__item active" data-link="#home">Home</li>
+                    <li class="navbar__menu__item active" data-link="#about">About</li>
+                    <li class="navbar__menu__item active" data-link="#skills">Skills</li>
+                    <li class="navbar__menu__item active" data-link="#work">My work</li>
+                    <li class="navbar__menu__item active" data-link="#contact">Contact</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+ 
+
+    <section id="home" class="section">
+        <div class="section__container">
+        <img src="/img/profile-san.gif" alt="내얼굴" class="home__avatar">
+        <h1 class="home__title">Hyeong san</h1>
+        <h2 class="home__description">1993.05.12</h2>
+        <p>관련 경력 無 / 신입 입사 희망    </p>
+        <button class="home__contact">Contact me</button>
+    </section>
+</div>
+
+    <section id="about" class="section">
+        <div class="section__container">
+        <h1 class="title">About</h1>
+        <p>HTML,CSS,JavaScript를 다룰줄알며, Adobe프로그램도 간단하게 사용할 수 있습니다.
+            <br />( + 추가적으로 리액트도 공부하고 있는 중입니다)  
+             
+        </p>
+        <div class="about__majors">
+            
+            <div class="major">
+                <div class="major__icon">
+                <i class="fab fa-html5"></i>  
+            </div>          
+            <h2 class="major__title">Front-end</h2>
+            <div class="description">HTML, CSS, JavaScript </div>
+        </div>
+
+        <div class="major">
+            <div class="major__icon">
+            <i class="fab fa-battle-net"></i>
+        </div>
+        <h2 class="major__title">Adobe</h2>
+        <div class="description">Photoshop, Illustrator </div>
+    </div>
+    <div class="major">
+        <div class="major__icon">
+            <i class="fab fa-react"></i> 
+    </div>          
+    <h2 class="major__title">React</h2>
+    
+</div>
+</div>
+    </section>
+</div>
+
+    <section id="skills" class="section">
+        <div class="section__container">
+        <h1 class="title">skills</h1>
+        
+        <div class="skillset">
+            <div class="skillset-left">
+                <h3 class="skillset__title">skills</h3>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>HTML</span>
+                        <span>30%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width:30%"></div>
+                    </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>CSS</span>
+                            <span>20%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width:20%"></div>
+                        </div>
+                    </div>
+                        <div class="skill">
+                            <div class="skill__description">
+                                <span>JavaScript</span>
+                                <span>15%</span>
+                            </div>
+                            <div class="skill__bar">
+                                <div class="skill__value" style="width:15%"></div>
+                            </div>
+                        </div>
+                            <div class="skill">
+                                <div class="skill__description">
+                                    <span>photoshop</span>
+                                    <span>60%</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__value" style="width:60%"></div>
+                                </div>
+                            </div>
+                                <div class="skill">
+                                    <div class="skill__description">
+                                        <span>Illustrator</span>
+                                        <span>50%</span>
+                                    </div>
+                                    <div class="skill__bar">
+                                        <div class="skill__value" style="width:50%"></div>
+                                    </div>
+                                
+                </div>
+            </div>
+            
+            <div class="skillset-right">
+                <div class="tools">
+                    <h3 class="skillset__title">Tools</h3>
+                    <ul class="tools__list">
+                        <li class="skill"><span>photoshop</span></li>
+                        <li class="skill"><span>illustrator</span></li>
+                    </ul>
+                </div>
+                <div class="etc">
+                    <h3 class="skillset__title">etc</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+
+    <section id="work" class="section">
+        <div class="section__container">
+        <h1 class="title work">Work</h1>
+        
+        <div class="work__categories">
+            <button class="category__btn active" data-filter="*">All <span class="category__count">7</span></button>
+            <button class="category__btn" data-filter="front-end">Front-end <span class="category__count">4</span></button>
+            <button class="category__btn" data-filter="mobile">Mobile <span class="category__count">3</span></button>
+        </div>
+        <div class="work__projects">       
+        <a href="https://hyeongsan.github.io/sanitube/" class="project"  target="blank"  data-type="front-end">
+            <img src="/img/유튜브api.PNG" alt="" class="project__img">
+            <div class="project__description">
+                <h3>유튜브</h3>
+                <span>Youtube API를 활용한 클론코딩</span>
+            </div>
+        </a>
+
+        <a href="www.youtube.com" class="project" target="blank" data-type="front-end">
+            <img src="/img/야후.PNG" alt="" class="project__img" >
+            <div class="project__description">
+                <h3>야후</h3>
+                <span>yahoo clone coding</span>
+            </div>
+        </a>
+
+        <a href="www.youtube.com" class="project" target="blank" data-type="front-end">
+            <img src="/img/유투브.PNG" alt="" class="project__img">
+            <div class="project__description">
+                <h3>유투브</h3>
+                <span>youtube clone coding</span>
+            </div>
+        </a>
+
+        <a href="www.youtube.com" class="project" target="blank" data-type="front-end">
+            <img src="/img/줌.PNG" alt="" class="project__img">
+            <div class="project__description">
+                <h3>줌</h3>
+                <span>zum clone coding</span>
+            </div>
+        </a>
+
+
+        <a href="www.youtube.com" class="project" target="blank" data-type="mobile">
+            <img src="/img/모바일1.PNG" alt="" class="project__img">
+            <div class="project__description">
+                <h3>모바일1</h3>
+                <span>mobile clone coding</span>
+            </div>
+        </a>
+
+
+        <a href="www.youtube.com" class="project" target="blank" data-type="mobile">
+            <img src="/img/모바일2.PNG" alt="" class="project__img">
+            <div class="project__description">
+                <h3>모바일2</h3>
+                <span>mobile clone coding</span>
+            </div>
+        </a>
+
+
+        <a href="www.youtube.com" class="project" target="blank" data-type="mobile">
+            <img src="/img/모바일1.PNG" alt="" class="project__img">
+            <div class="project__description">
+                <h3>모바일3</h3>
+                <span>mobile clone coding</span>
+            </div>
+        </a>
+
+    </div>
+</div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="section__container">
+        <h1 class="contact__title">Contact</h1>
+        <h2 class="contact__email">sanstory12rt@naver.com</h2>
+        <div class="contact__links">
+           
+        </div>
+        
+    </div>
+    </section>
+
+    <button class="arrow-up">
+        <i class="fas fa-angle-double-up"></i>
+    </button>
+</body>
+</html>
