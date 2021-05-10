@@ -115,7 +115,6 @@ p {
     rgb(255, 255, 255) 100%
   );
   color: rgb(26, 78, 26);
-  padding: 10px;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -123,14 +122,15 @@ p {
 }
 
 .container {
-  width: 1280px;
-  margin: auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
+.row {
+}
 .navbar__menu {
   display: flex;
-  justify-content: space-between;
-  margin: auto;
+  justify-content: center;
   color: rgb(41, 126, 41);
 }
 
@@ -152,7 +152,7 @@ p {
 /* Home */
 
 #home {
-  background: url("./img/Untitled-1.jpg") center/cover no-repeat;
+  background: url("/img/Untitled-1.jpg") center/cover no-repeat;
   padding: 110px 0 30px 0;
   text-align: center;
   margin-top: ;
@@ -404,23 +404,28 @@ p {
 
 .contact__title,
 .contact__email,
-.contact__rights {
+.contact__rights,
+.contact__num {
   color: var(--color-black);
+}
+.contact__email {
+  padding-top: 10px;
 }
 
 .contact__title {
+  display: inline;
   margin: 32px;
   position: relative;
 }
 
 .contact__title:after {
   content: "";
-  width: 330px;
+  left: -60px;
   height: 1px;
+  width: 300px;
   background-color: black;
   position: absolute;
-  top: 90px;
-  right: 403px;
+  top: 75px;
 }
 
 .contact__links {
