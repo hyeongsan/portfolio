@@ -16,7 +16,7 @@
   --color-light-yellow: #ebf1d1;
 
   /* font size */
-  --font-large: 48px;
+  --font-large: 35px;
   --font-medium: 28px;
   --font-regular: 25px;
   --font-small: 16px;
@@ -253,6 +253,22 @@ p {
 
 }
 
+/* career*/
+
+#career {
+  padding: 60px 0 100px 0;
+  margin: 0;
+  background-color: #b2bdb9;
+}
+
+/*education*/
+
+#education {
+  padding: 60px 0 100px 0;
+  margin: 0;
+  backgroud-color: #fff;
+}
+
 /* skills */
 
 #skills {
@@ -315,7 +331,8 @@ p {
 /* work */
 
 #work {
-  padding: 100px 0px;
+  padding: 55px 0px;
+  
 }
 
 .category__btn {
@@ -422,7 +439,7 @@ p {
 /* contact */
 
 #contact {
-  background-color: #a1d7c5;
+  background-color: #b2bdb9;
 }
 
 .contact__title,
