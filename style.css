@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap');
+
 :root {
   /* color */
   --color-white: #ffffff;
@@ -36,7 +38,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: "Noto Sans KR";
+  font-family: 'Gowun Batang', serif;
 }
 
 body {
@@ -102,6 +104,10 @@ p {
   line-height: 100px;
   color: #fff;
   margin-bottom: 10px;
+}
+
+.bold{
+  font-weight: bold;
 }
 
 /* navbar */
@@ -170,6 +176,11 @@ p {
 .home__title,
 .home__description {
   color: var(--color-black);
+  margin-top:10px;
+}
+
+.phone{
+  margin-top:5px;
 }
 
 .home__contact {
@@ -228,6 +239,18 @@ p {
 
 .major__icon i {
   transition: all var(--animation-duration) ease;
+}
+
+.aboutIntro{
+  text-align: left;
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutIntro> div{
+  
+
 }
 
 /* skills */
