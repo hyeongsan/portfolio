@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    wrap {                          
+        border: 1px solid red;              
+        width: 100%;              
+        min-height: 768px;              
+        position: relative;              
+      }              
+    #mask {              
+        position: absolute;left: 0;              
+        top: 0;z-index: 9999;
+        background-color: #000;
+        display: none;
+    }    
+    .ModalPopup {
+        border: 1px solid blue;
+        width:100px;
+        height:100px;
+        display: none;
+        position: absolute;
+        z-index: 10000;   
+        background-color: #fff;
+      }
+</style>
+<body>
+    <!-- 전체 랩 -->      
+    <div id="wrap">    
+        <!-- 모달팝업 활성화 버튼-->
+        <button class="openMask">가운데 팝업!</button>
+        <!-- 모달팝업 영역 --> 
+        <div class="ModalPopup">  
+          가운데 정렬 팝업/div   
+        </div>
+      </div>
+              
+      <!-- 페이드 영역-->
+      <div id="mask"></div>
+</body>1
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+    
+    jQuery.fn.center = function () {
+        this.css('top', Math.max(0,(($(window).height()-$(this).outerHeight())/2) + $(window).scrollTop())+'px');        
+        this.css('left', Math.max(0,(($(window).width()-$(this).outerWidth())/2) + $(window).scrollLeft())+'px');        
+        return this;        
+    }
+
+    /*모달 활성화 및 팝업 활성화*/
+
+    function wrapWindowByMask (){
+        var maskHeight = $(document).height();
+        var maskWidth = $(window).width();
+        $('#mask').css({'width':maskWidth, 'height':maskHeight});
+        $('#mask').fadeTo(10,0.8);
+        $('.ModalPopup').show();
+        $('.ModalPopup').center();
+    }
+
+    /*버튼 클릭시 위 함수 콜*/
+
+    $(function () {
+        $('.openMask').click(function(e) {
+            e.preventDefault();
+            wrapWindowByMask();
+        });
+    });
+    </script>
+</html>
