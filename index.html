@@ -559,7 +559,7 @@
                             <div class="bold textCenter divMargin" >Project Presentation video</div>                     
                             <!-- <iframe width="750" height="422" src="https://www.youtube.com/embed/hl4D6UNu9xY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                             <!-- <video style="width: 750px; height:422px;" src="img/forRest.mp4" controls></video> -->
-                            <iframe  width="750" height="422" src="https://www.youtube-nocookie.com/embed/hl4D6UNu9xY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe  class="youtube-iframe" width="750" height="422" src="https://www.youtube-nocookie.com/embed/hl4D6UNu9xY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>                    
                         
                         <div>
@@ -843,13 +843,24 @@
             $('.ModalPopup').hide();
             $('.mask').hide();
             $('body').css('overflow','scroll');
+
             $('video').get(0).pause();
             $('video').get(0).currentTime = 0;
             $('video').get(1).pause();
             $('video').get(1).currentTime = 0;
-            $('video').get(2).pause();
-            $('video').get(2).currentTime = 0;
         })
+
+        $('iframe[src*="https://www.youtube.com/embed/"]').addClass("youtube-iframe");
+
+        $(".mask").click(function() {
+        // changes the iframe src to prevent playback or stop the video playback in our case
+        $('.youtube-iframe').each(function(index) {
+            $(this).attr('src', $(this).attr('src'));
+            return false;
+        });
+        
+        //click function
+        });
 
         var linkLength =$('iframe[src*="https://www.youtube.com/embed/"]').length;
 
