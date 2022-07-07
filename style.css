@@ -84,11 +84,11 @@ h3 {
 }
 
 span {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 p {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: var(--weight-regular);
   color: #000;
   margin: 20px 8px 0 0;
@@ -247,7 +247,7 @@ p {
 }
 
 .section__container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
 }
 
@@ -287,7 +287,7 @@ p {
 
 .aboutIntro{
   text-align: left;
-  width: 1200px;
+  width: 1000px;
   display: flex;
   justify-content: space-between;
 }
@@ -307,19 +307,18 @@ p {
 }
 
 .careerContainer{
-  width: 1200px;
-  height: 650px;
+  width: 1000px;
+  height: 680px;
   margin:0 auto;
   margin-top:20px;
   border-radius: 10px;
-  padding: 10px;
+  padding: 20px;
   display:flex;
   justify-content: space-between;
   backdrop-filter: blur(40px);
   border-radius: 37px;
   background: rgb(255,255,255,0.8);
   box-shadow: 10px 10px 0px 0 rgb(0 0 0 / 15%);
-
   border-top: 2px solid rgba(255, 255, 255, .4);
   border-left: 2px solid rgba(255, 255, 255, .4);
   border-right: 3px solid rgba(255, 255, 255, .32);
@@ -348,8 +347,9 @@ p {
   border-bottom: 2px solid #9caebe;
   text-align: left;
   position: relative;
-  display: flex;  
+  display: flex;
   margin-bottom: 20px;
+  width: 380px;
 }
 
 .underContent{
@@ -359,7 +359,7 @@ p {
 .underline:before{
   content: "";
   display: inline-block;
-  width: 88px;
+  width: 77px;
   height: 8px;
   background: #9caebe;
   position: absolute;
@@ -719,7 +719,7 @@ p {
 
 .barGraph.stack li{  
   padding: 20px;
-  width: 950px;
+  width: 850px;
   border-radius: 10px;
   margin:0 auto;
   margin-bottom: 20px;
