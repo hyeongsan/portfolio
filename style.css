@@ -1428,6 +1428,7 @@ video{
   width: 680px;
   height: 630px;
   overflow: scroll;
+  left: 6px;  
 }
 
 .barGraph.stack li{
@@ -1439,6 +1440,7 @@ video{
 .work__categories{
   display: flex;
     flex-direction: column;
+    left: 9px;
 }
 
 .work__projects{
@@ -1482,8 +1484,9 @@ video{
   height: 350px !important; 
 }
 
-.ModalPopup.res{
-  left: 30% !important;
+.ModalPopup.res {
+  left: 50% !important;
+  top: 50% !important;
 }
 
 }
